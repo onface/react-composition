@@ -122,3 +122,7 @@ fis.media('npm').match('*.md', {
 fis.media('npm').match('doc/vendor/**', {
     release: false
 })
+
+fis.media('npm').match('(**)README.md', {
+    release: '$1README'
+})
