@@ -56,6 +56,14 @@ var App = React.createClass({
                             value: value
                         })
                     }
+                    /*
+                    ,
+                    onCompositionStart: function (event) {},
+                    onCompositionUpdate: function (event) {},
+                    onCompositionEnd: function (event) {}
+                    */
+                    // 若要监听原生的 onCompositionStart|Update|End 事件
+                    // 需在 reactComposition(settings) 的 settings 中绑定回调函数
                 })}
                 value={self.state.value}
                  />
@@ -103,6 +111,14 @@ var App = React.createClass({
                             value: value
                         })
                     }
+                    /*
+                    ,
+                    onCompositionStart: function (event) {},
+                    onCompositionUpdate: function (event) {},
+                    onCompositionEnd: function (event) {}
+                    */
+                    // 若要监听原生的 onCompositionStart|Update|End 事件
+                    // 需在 reactComposition(settings) 的 settings 中绑定回调函数
                 })}
                 value={self.state.value}
                  />
@@ -156,6 +172,14 @@ var App = React.createClass({
                             value: value
                         })
                     }
+                    /*
+                    ,
+                    onCompositionStart: function (event) {},
+                    onCompositionUpdate: function (event) {},
+                    onCompositionEnd: function (event) {}
+                    */
+                    // 若要监听原生的 onCompositionStart|Update|End 事件
+                    // 需在 reactComposition(settings) 的 settings 中绑定回调函数
                 })}
                 value={self.state.value}
                  />
