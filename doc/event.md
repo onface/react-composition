@@ -119,6 +119,7 @@ var App = React.createClass({
             break
             case 'COMPOSITION_END':
                 state.inComposition = false
+                state.finalValue = data.value
             break
         }
         this.setState(state)
@@ -153,7 +154,10 @@ var App = React.createClass({
             },
             onCompositionEnd: function (event) {
                 self.ms({
-                    type: 'COMPOSITION_END'
+                    type: 'COMPOSITION_END',
+                    data: {
+                        value: event.target.value
+                    }
                 })
                 updateStatus('onCompositionEnd', event.target.value, count())
             }
@@ -170,7 +174,7 @@ var App = React.createClass({
                 还可以输入：{self.props.maxLength - self.state.finalValue.length}个字
                 </div>
                 <hr />
-                请在输入法模式和非输入法模式下输入文字，以理解事件触发时机
+                请在输入法模式和非输入法模式下输入文字，以理解事件触发时机 （为了兼容 chrome 某些版本，在 onCompositionEnd 时会触发代理的 onChange ）
                 <br />
                 <textarea type="text" {...props} value={self.state.value} />
             </div>
