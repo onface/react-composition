@@ -2,10 +2,8 @@
 
 > 解决 React 中文输入法导致的 ni&#39;hao 数据更新问题
 
-> 构建系统基于 https://github.com/fast-flow/boot
 
-- Online: https://fast-flow.github.io/react-composition/
-- Other version: https://fast-flow.github.io/react-composition/0.0.0 (0.0.0 is version)
+- Online: https://onface.github.io/react-composition/
 
 ---
 

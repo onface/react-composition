@@ -1,10 +1,10 @@
 {
   "name": "react-composition",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "解决 React 中文输入法导致的 ni'hao 数据更新问题",
   "main": "index.js",
   "author": "nimojs",
-  "repository": "fast-flow/react-composition",
+  "repository": "onface/react-composition",
   "keywords": [
     "react",
     "composition",
